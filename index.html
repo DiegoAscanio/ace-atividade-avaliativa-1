@@ -1,0 +1,23 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<script>
+			function download () {
+				let matricula = document.getElementById('matricula').value;
+				let dndElement = document.getElementById('linkDownload');
+				dndElement.innerHTML = "<a href=\'./" + matricula + ".pdf\'>Baixar Prova</a>";
+			}
+		</script>
+	</head>
+	<body>
+		<h1> Download da Prova </h1>
+		<table>
+			<tbody><tr>
+				<td> Insira seu numero de matrícula: </td><td><input id="matricula" type="text"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button onclick="download();">Baixar Prova</button></td>
+			</tr>
+		</tbody></table>
+		<div id="linkDownload">
+		</div>
+</body></html>
